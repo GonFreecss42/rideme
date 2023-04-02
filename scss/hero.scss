@@ -1,0 +1,52 @@
+.hero {
+  display: flex;
+  column-gap: 150px;
+  margin-bottom: 85px;
+
+  &__column {
+    width: 50%;
+  }
+
+  &__title {
+
+    font: {
+      family: "GilroyExtrabold";
+      size: 60px;
+      weight: 800;
+    };
+
+    margin-bottom: 50px;
+    line-height: 66px;
+
+  }
+
+  &__description {
+    font-family: "GilroySemibold";
+    color: #9E9DA2;
+    font-size: 24px;
+    margin-bottom: 62px;
+    line-height: 28px;
+  }
+
+  &__appstore {
+    display: flex;
+    column-gap: 30px;
+
+    &__button {
+      background-color: black;
+      display: inline-flex;
+      height: 66px;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 25px;
+      font-family: "GilroyExtrabold";
+      align-items: center;
+      padding-inline: 32px;
+      border-radius: 3px;
+      column-gap: 10px;
+    }
+  }
+
+
+}
