@@ -205,16 +205,21 @@ input {
      -moz-column-gap: 150px;
           column-gap: 150px;
   margin-bottom: 85px;
+  overflow: hidden;
 }
 .hero__column {
   width: 50%;
 }
 .hero__title {
+  margin-top: 140px;
   font-family: "GilroyExtrabold";
   font-size: 60px;
   font-weight: 800;
   margin-bottom: 50px;
   line-height: 66px;
+}
+.hero__img {
+  margin-top: 50px;
 }
 .hero__description {
   font-family: "GilroySemibold";
