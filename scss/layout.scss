@@ -1,7 +1,12 @@
+.body {
+  touch-action: none;
+}
+
 .container {
   max-width: 1280px;
   margin-inline: auto;
 }
+
 .content {
   background-color: #F9F9F9;
 }

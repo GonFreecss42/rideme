@@ -23,6 +23,7 @@
 
 html,
 body,
+button,
 div,
 span,
 object,
@@ -188,6 +189,11 @@ input {
   display: block;
 }
 
+.body {
+  -ms-touch-action: none;
+      touch-action: none;
+}
+
 .container {
   max-width: 1280px;
   margin-inline: auto;
@@ -338,4 +344,141 @@ input {
           column-gap: 10px;
   cursor: pointer;
   border: none;
+}
+
+.tree__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../images/iphone_bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 278px;
+  height: 567px;
+  text-align: center;
+  padding-top: 64px;
+  overflow: hidden;
+  margin-inline: auto;
+  position: relative;
+  z-index: 2;
+}
+.tree__slider > .swiper {
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  overflow: hidden;
+  height: calc(100% - 40px);
+  width: calc(100% - 39px);
+  margin-inline: auto;
+}
+.tree__slider > .swiper img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.tree__slider > .swiper-wrapper {
+  height: 100%;
+}
+.tree__slider .swiper-slide {
+  overflow: hidden;
+}
+.tree__green {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: green;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #75BF7A;
+}
+.tree__title {
+  font-family: "GilroyExtrabold";
+  color: black;
+  font-size: 46px;
+  max-width: 405px;
+  text-align: center;
+  margin-inline: auto;
+}
+.tree__title .span {
+  color: #75BF7A;
+}
+.tree__description {
+  font-family: "GilroySemibold";
+  font-size: 23px;
+  color: #9E9DA2;
+  width: 620px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 63px;
+  margin-top: 25px;
+  text-align: center;
+  margin-inline: auto;
+}
+.tree__column {
+  width: 33.3333%;
+  text-align: right;
+}
+.tree__column:last-of-type {
+  text-align: left;
+}
+.tree__number {
+  margin-bottom: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "GilroyExtrabold";
+  font-size: 34px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-image: url("../images/frame.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 60px;
+  height: 60px;
+  color: #75BF7A;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+}
+.tree__item {
+  width: 290px;
+  margin-bottom: 84px;
+}
+.tree__label {
+  color: black;
+  font-size: 22px;
+  font-family: "GilroyExtrabold";
+  line-height: 50px;
+}
+.tree__text {
+  color: #9E9DA2;
+  font-family: "GilroyMedium";
+  font-size: 20px;
+  line-height: 26px;
+  min-height: 120px;
+}
+.tree__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
 }
