@@ -1,0 +1,61 @@
+.footer {
+  height: 350px;
+  max-width: 1280px;
+  margin-inline: auto;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 260px;
+    border-bottom: 1px solid gray;
+  }
+  &__contacts {
+    display: flex;
+    column-gap: 72px;
+  }
+  &__menu {
+    height: 144px;
+    width: 206px;
+
+    &__title {
+      color: #272042;
+      font-size: 21px;
+      font-family: "GilroySemibold";
+      margin-bottom: 21px;
+    }
+    &__list {
+      font-size: 18px;
+      font-family: "Gilroy";
+      color: #8b8ba5;
+      &__item {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  &__appstore {
+    display: flex;
+    column-gap: 42px;
+
+    &__button {
+      background-color: black;
+      display: inline-flex;
+      height: 46px;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 17px;
+      font-family: "GilroyExtrabold";
+      align-items: center;
+      padding-inline: 20px;
+      border-radius: 3px;
+      column-gap: 10px;
+    }
+  }
+  &__copyright {
+    line-height: 100px;
+    text-align: center;
+    font-size: 16px;
+    color:#75BF7A;
+  }
+}

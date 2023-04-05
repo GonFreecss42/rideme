@@ -1,39 +1,90 @@
 .benefits {
-    font-size: 20px;
-    height:304px;
-    color:black;
+  font-size: 20px;
+  color: black;
+  margin-bottom: 275px;
 
-    &__header {
-        font-family: "GilroyExtrabold";
-        color: #75BF7A;
-        font-size: 34px;
-        text-align: center;
-        font-weight: 600px;
+  &__heading {
+    font-family: "GilroyExtrabold";
+    color: #75bf7a;
+    font-size: 34px;
+    text-align: center;
+    font-weight: 600px;
+    margin-bottom: 52px;
 
-        &--highlighted {
-            color: #000000;
-        }
-
-        &__number {
-            color: #75BF7A;
-            font-size: 88px;
-            font-family: "GilroyExtrabold";
-        }
-
-        &__title {
-            color: #000000;
-            font-size: 5px;
-            line-height: 32px;
-            font-family: "GilroyExtrabold";
-
-        }
-
-        &__descriptions {
-            color: #9E9DA2;
-            font-size: 22px;
-            font-family: "GilroyMediumbold";
-
-        }
-
+    &__title {
+      color: #000000;
+      font-size: 34px;
+      line-height: 32px;
+      text-transform: uppercase;
+      font-family: "GilroyExtrabold";
+      &--highlighted {
+        color: #75bf7a;
+      }
     }
+
+    &__descriptions {
+      color: #9e9da2;
+      font-size: 22px;
+      font-family: "GilroyMediumbold";
+    }
+  }
+
+  &__item {
+    background: #ffffff;
+    height: 304px;
+    width:calc(100% - 92px);
+    padding-inline: 46px;
+    margin-bottom: 56px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    &__image {
+      position: absolute;
+      right: 110px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &__heading {
+      display: flex;
+      align-items: center;
+      max-width: 385px;
+      width:100%;
+      margin-bottom:20px;
+    }
+
+    &:nth-of-type(even) &__image {
+      right: initial;
+      left: 103px;
+    }
+
+    &:nth-of-type(even) {
+      align-items: flex-end;
+      margin-left: auto;
+    }
+    &:nth-of-type(even) &__heading {
+      justify-content: flex-start;
+    }
+  }
+
+  &__number {
+    color: #75bf7a;
+    font-size: 88px;
+    font-family: "GilroySemibold";
+    margin-right: 40px;
+  }
+  &__title {
+    font-family: "GilroySemibold";
+    font-size: 34px;
+  }
+  &__descriptions {
+    font-family: "Gilroy";
+    color: #9e9da2;
+    font-size: 22px;
+    max-width: 385px;
+    line-height: 23px;
+  }
 }

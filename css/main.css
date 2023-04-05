@@ -189,7 +189,8 @@ input {
   display: block;
 }
 
-.body {
+body {
+  font-family: "Gilroy";
   -ms-touch-action: none;
       touch-action: none;
 }
@@ -200,7 +201,8 @@ input {
 }
 
 .content {
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
+  overflow: hidden;
 }
 
 .hero {
@@ -264,6 +266,7 @@ input {
 }
 
 .subscribe {
+  margin-bottom: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,25 +405,29 @@ input {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   border-radius: 50%;
-  background-color: #75BF7A;
+  background-color: #75bf7a;
 }
-.tree__title {
+.tree__heading {
   font-family: "GilroyExtrabold";
-  color: black;
-  font-size: 46px;
-  max-width: 405px;
-  margin-top: 128px;
-  margin-bottom: 25px;
+  color: #75bf7a;
+  font-size: 34px;
   text-align: center;
-  margin-inline: auto;
+  font-weight: 600px;
 }
-.tree__title--highlighted {
-  color: #75BF7A;
+.tree__heading__title {
+  color: #000000;
+  font-size: 34px;
+  line-height: 32px;
+  text-transform: uppercase;
+  font-family: "GilroyExtrabold";
+}
+.tree__heading__title--highlighted {
+  color: #75bf7a;
 }
 .tree__description {
   font-family: "GilroySemibold";
   font-size: 23px;
-  color: #9E9DA2;
+  color: #9e9da2;
   width: 620px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -452,7 +459,7 @@ input {
   background-size: 100% 100%;
   width: 60px;
   height: 60px;
-  color: #75BF7A;
+  color: #75bf7a;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -469,7 +476,7 @@ input {
   line-height: 50px;
 }
 .tree__text {
-  color: #9E9DA2;
+  color: #9e9da2;
   font-family: "GilroyMedium";
   font-size: 20px;
   line-height: 26px;
@@ -484,35 +491,197 @@ input {
           justify-content: center;
   position: relative;
 }
+.tree__content::after {
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 0;
+  border-radius: 400px;
+  background-color: #75BF7A;
+  content: "";
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  min-width: 400px;
+  margin-inline: auto;
+  display: block;
+}
 
 .benefits {
   font-size: 20px;
-  height: 304px;
   color: black;
+  margin-bottom: 275px;
 }
-.benefits__header {
+.benefits__heading {
   font-family: "GilroyExtrabold";
-  color: #75BF7A;
+  color: #75bf7a;
   font-size: 34px;
   text-align: center;
   font-weight: 600px;
+  margin-bottom: 52px;
 }
-.benefits__header--highlighted {
+.benefits__heading__title {
   color: #000000;
-}
-.benefits__header__number {
-  color: #75BF7A;
-  font-size: 88px;
-  font-family: "GilroyExtrabold";
-}
-.benefits__header__title {
-  color: #000000;
-  font-size: 5px;
+  font-size: 34px;
   line-height: 32px;
+  text-transform: uppercase;
   font-family: "GilroyExtrabold";
 }
-.benefits__header__descriptions {
-  color: #9E9DA2;
+.benefits__heading__title--highlighted {
+  color: #75bf7a;
+}
+.benefits__heading__descriptions {
+  color: #9e9da2;
   font-size: 22px;
   font-family: "GilroyMediumbold";
+}
+.benefits__item {
+  background: #ffffff;
+  height: 304px;
+  width: calc(100% - 92px);
+  padding-inline: 46px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+.benefits__item__image {
+  position: absolute;
+  right: 110px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.benefits__item__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 385px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.benefits__item:nth-of-type(even) .benefits__item__image {
+  right: initial;
+  left: 103px;
+}
+.benefits__item:nth-of-type(even) {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: auto;
+}
+.benefits__item:nth-of-type(even) .benefits__item__heading {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.benefits__number {
+  color: #75bf7a;
+  font-size: 88px;
+  font-family: "GilroySemibold";
+  margin-right: 40px;
+}
+.benefits__title {
+  font-family: "GilroySemibold";
+  font-size: 34px;
+}
+.benefits__descriptions {
+  font-family: "Gilroy";
+  color: #9e9da2;
+  font-size: 22px;
+  max-width: 385px;
+  line-height: 23px;
+}
+
+.footer {
+  height: 350px;
+  max-width: 1280px;
+  margin-inline: auto;
+}
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 260px;
+  border-bottom: 1px solid gray;
+}
+.footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 72px;
+     -moz-column-gap: 72px;
+          column-gap: 72px;
+}
+.footer__menu {
+  height: 144px;
+  width: 206px;
+}
+.footer__menu__title {
+  color: #272042;
+  font-size: 21px;
+  font-family: "GilroySemibold";
+  margin-bottom: 21px;
+}
+.footer__menu__list {
+  font-size: 18px;
+  font-family: "Gilroy";
+  color: #8b8ba5;
+}
+.footer__menu__list__item {
+  margin-bottom: 15px;
+}
+.footer__appstore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 42px;
+     -moz-column-gap: 42px;
+          column-gap: 42px;
+}
+.footer__appstore__button {
+  background-color: black;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 46px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-family: "GilroyExtrabold";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-inline: 20px;
+  border-radius: 3px;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+.footer__copyright {
+  line-height: 100px;
+  text-align: center;
+  font-size: 16px;
+  color: #75BF7A;
 }
