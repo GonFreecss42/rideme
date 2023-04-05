@@ -409,10 +409,12 @@ input {
   color: black;
   font-size: 46px;
   max-width: 405px;
+  margin-top: 128px;
+  margin-bottom: 25px;
   text-align: center;
   margin-inline: auto;
 }
-.tree__title .span {
+.tree__title--highlighted {
   color: #75BF7A;
 }
 .tree__description {
@@ -481,4 +483,36 @@ input {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+}
+
+.benefits {
+  font-size: 20px;
+  height: 304px;
+  color: black;
+}
+.benefits__header {
+  font-family: "GilroyExtrabold";
+  color: #75BF7A;
+  font-size: 34px;
+  text-align: center;
+  font-weight: 600px;
+}
+.benefits__header--highlighted {
+  color: #000000;
+}
+.benefits__header__number {
+  color: #75BF7A;
+  font-size: 88px;
+  font-family: "GilroyExtrabold";
+}
+.benefits__header__title {
+  color: #000000;
+  font-size: 5px;
+  line-height: 32px;
+  font-family: "GilroyExtrabold";
+}
+.benefits__header__descriptions {
+  color: #9E9DA2;
+  font-size: 22px;
+  font-family: "GilroyMediumbold";
 }

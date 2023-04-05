@@ -1,0 +1,39 @@
+.benefits {
+    font-size: 20px;
+    height:304px;
+    color:black;
+
+    &__header {
+        font-family: "GilroyExtrabold";
+        color: #75BF7A;
+        font-size: 34px;
+        text-align: center;
+        font-weight: 600px;
+
+        &--highlighted {
+            color: #000000;
+        }
+
+        &__number {
+            color: #75BF7A;
+            font-size: 88px;
+            font-family: "GilroyExtrabold";
+        }
+
+        &__title {
+            color: #000000;
+            font-size: 5px;
+            line-height: 32px;
+            font-family: "GilroyExtrabold";
+
+        }
+
+        &__descriptions {
+            color: #9E9DA2;
+            font-size: 22px;
+            font-family: "GilroyMediumbold";
+
+        }
+
+    }
+}

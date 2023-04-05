@@ -1,5 +1,5 @@
 .tree {
-        // position: relative;
+    // position: relative;
 
     // &::after {
     //     top: 50%;
@@ -59,6 +59,7 @@
                 border-bottom-right-radius: 25px;
 
             }
+
         }
 
         >.swiper-wrapper {
@@ -91,30 +92,34 @@
         color: black;
         font-size: 46px;
         max-width: 405px;
+        margin-top: 128px;
+        margin-bottom: 25px;
         text-align: center;
-        margin-inline:auto;
-            .span{
-                color:#75BF7A;
+        margin-inline: auto;
+            &--highlighted {
+                color: #75BF7A;
         }
-        
     }
+
+
 
     &__description {
         font-family: "GilroySemibold";
         font-size: 23px;
         color: #9E9DA2;
         width: 620px;
-        display:flex;
+        display: flex;
         margin-bottom: 63px;
         margin-top: 25px;
         text-align: center;
-        margin-inline:auto;
+        margin-inline: auto;
 
     }
 
     &__column {
         width: 33.3333%;
         text-align: right;
+
         &:last-of-type {
             text-align: left;
         }
@@ -124,8 +129,9 @@
         margin-bottom: 4px;
         align-items: center;
         font-family: "GilroyExtrabold";
-        font-size:34px;
-        display:inline-flex;
+        font-size: 34px;
+        display: inline-flex;
+
         background: {
             image: url("../images/frame.png");
             repeat: no-repeat;
@@ -141,7 +147,7 @@
 
     &__item {
         width: 290px;
-        margin-bottom:84px;
+        margin-bottom: 84px;
     }
 
     &__label {
@@ -163,7 +169,7 @@
     &__content {
         display: flex;
         justify-content: center;
-        position:relative;
+        position: relative;
         ;
     }
 
