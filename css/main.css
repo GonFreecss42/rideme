@@ -212,7 +212,6 @@ body {
   -webkit-column-gap: 150px;
      -moz-column-gap: 150px;
           column-gap: 150px;
-  margin-bottom: 85px;
   overflow: hidden;
 }
 .hero__column {
@@ -349,6 +348,9 @@ body {
   border: none;
 }
 
+.tree {
+  padding-top: 85px;
+}
 .tree__slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -366,7 +368,6 @@ body {
   height: 567px;
   text-align: center;
   padding-top: 64px;
-  overflow: hidden;
   margin-inline: auto;
   position: relative;
   z-index: 2;
@@ -374,7 +375,6 @@ body {
 .tree__slider > .swiper {
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
-  overflow: hidden;
   height: calc(100% - 40px);
   width: calc(100% - 39px);
   margin-inline: auto;
@@ -388,6 +388,14 @@ body {
 }
 .tree__slider > .swiper-wrapper {
   height: 100%;
+}
+.tree__slider .swiper-horizontal > .swiper-pagination-bullets,
+.tree__slider .swiper-pagination-bullets.swiper-pagination-horizontal,
+.tree__slider .swiper-pagination-custom,
+.tree__slider .swiper-pagination-fraction {
+  position: relative;
+  z-index: 300;
+  bottom: -25px;
 }
 .tree__slider .swiper-slide {
   overflow: hidden;
@@ -508,11 +516,16 @@ body {
   margin-inline: auto;
   display: block;
 }
+.tree .swiper-pagination-bullet {
+  width: 65px;
+  height: 13px;
+}
 
 .benefits {
   font-size: 20px;
   color: black;
   margin-bottom: 275px;
+  padding-top: 90px;
 }
 .benefits__heading {
   font-family: "GilroyExtrabold";
@@ -535,7 +548,7 @@ body {
 .benefits__heading__descriptions {
   color: #9e9da2;
   font-size: 22px;
-  font-family: "GilroyMediumbold";
+  font-family: "GilroyMedium";
 }
 .benefits__item {
   background: #ffffff;
