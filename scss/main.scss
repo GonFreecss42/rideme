@@ -1,11 +1,9 @@
-@import "fonts";
-@import "reset";
+@import "global/fonts";
+@import "global/reset";
+@import "global/layout";
 
-
-@import "header";
-@import "layout";
-@import "hero";
-@import "subscribe";
-@import "tree";
-@import "benefits";
-@import "footer";
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/subscribe";
+@import "blocks/benefits";
+@import "blocks/footer";

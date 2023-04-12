@@ -1,13 +1,12 @@
 doctype html
 html(lang="en")
-  include head
+  include blocks/head
   body
-    include header
+    include blocks/header
     .content 
       .container
-        include hero
-        include subscribe
-        include tree
-        include benefits
-    include footer 
+        include blocks/hero
+        include blocks/subscribe
+        include blocks/benefits
+    include blocks/footer 
       

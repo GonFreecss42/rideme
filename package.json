@@ -1,0 +1,21 @@
+{
+  "name": "rideme",
+  "version": "1.0.0",
+  "repository": "https://github.com/GonFreecss42/rideme.git",
+  "author": "GonFreccs",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "pug-plugin": "^4.9.7",
+    "sass": "^1.62.0",
+    "sass-loader": "^13.2.2",
+    "webpack": "^5.79.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.2"
+  },
+  "type": "module",
+  "scripts": {
+    "develop": "webpack serve"
+  }
+}
