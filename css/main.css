@@ -160,6 +160,7 @@ input {
   font-family: "GilroyMedium";
   font-size: 17px;
   color: black;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
   text-decoration: none;
 }
 .header__menu__item {
@@ -222,7 +223,7 @@ body {
   font-family: "GilroyExtrabold";
   font-size: 60px;
   font-weight: 800;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   line-height: 66px;
 }
 .hero__img {
@@ -262,10 +263,11 @@ body {
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
           column-gap: 10px;
+  margin-bottom: 60px;
 }
 
 .subscribe {
-  margin-bottom: 120px;
+  margin-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,6 +348,7 @@ body {
           column-gap: 10px;
   cursor: pointer;
   border: none;
+  column-gap: 10px;
 }
 
 .tree {

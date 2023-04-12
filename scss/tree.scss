@@ -41,9 +41,9 @@
     .swiper-pagination-bullets.swiper-pagination-horizontal,
     .swiper-pagination-custom,
     .swiper-pagination-fraction {
-      position:relative;
+      position: relative;
       z-index: 300;
-      bottom:-25px;
+      bottom: -25px;
     }
 
     .swiper-slide {
@@ -169,9 +169,10 @@
       display: block;
     }
   }
-  .swiper-pagination-bullet{
-    width:65px;
+
+  .swiper-pagination-bullet {
+    width: 65px;
     height: 13px;
-  
+
   }
 }
