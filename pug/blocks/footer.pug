@@ -1,32 +1,43 @@
+-
+  var footerMenu = [
+    {
+      title: "Be Our Friend",
+      items: [
+        "3, Season Park, Jakarta",
+        "support@foodyar.co,id",
+        "021 - 1111 - 2222"
+      ]
+    },
+    {
+      title: "Be Our Friend",
+      items: [
+        "3, Season Park, Jakarta",
+        "support@foodyar.co,id",
+        "021 - 1111 - 2222"
+      ]
+    }
+  ]
+
 .footer(id="footer")
   .footer__content 
     .footer__logo
       a.footer__logo__link(href="/")
-        img(alt="this is footer image." src=require("../../images/footer_logo.png"))
+        img(alt="this is footer image." src=require("images/footer_logo.png"))
 
-    .footer__contacts 
-      .footer__menu
-        p.footer__menu__title Be Our Friend
-
-        ul.footer__menu__list 
-          li.footer__menu__list__item 3, Season Park, Jakarta
-          li.footer__menu__list__item support@foodyar.co,id
-          li.footer__menu__list__item 021 - 1111 - 2222
-
-      .footer__menu
-        p.footer__menu__title Be Our Friend
-
-        ul.footer__menu__list 
-          li.footer__menu__list__item 3, Season Park, Jakarta
-          li.footer__menu__list__item support@foodyar.co,id
-          li.footer__menu__list__item 021 - 1111 - 2222    
+    .footer__contacts
+      each menu of footerMenu
+        .footer__menu
+          p.footer__menu__title= menu.title
+          ul.footer__menu__list 
+            each item in menu.items
+              li.footer__menu__list__item= item
 
     .footer__appstore 
       a.footer__appstore__button(href="#")
-        img(alt="this is appstore button" src=require("../../images/footer_logo_appstore.png"))
+        img(alt="this is appstore button" src=require("images/appstore.png")).footer__appstore__icon
         | Download
       a.footer__appstore__button(href="#")
-        img(alt="this is appstore button" src=require("../../images/footer_logo_marketplace.png"))
+        img(alt="this is appstore button" src=require("images/marketplace.png")).footer__appstore__icon
         | Download
 
   .footer__copyright 

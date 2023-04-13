@@ -1,0 +1,63 @@
+-
+  var steps = [
+    {
+      text: `
+        Have to reach office or going for shopping? Just put your current 
+        location and destination and search a ride that suits you
+      `,
+      title: "request a ride"
+    },
+    {
+      text: `
+        Going somewhere but hate to travel alone - 
+        just post your ride details and publish it
+      `,
+      title: "post a ride"
+    },
+    {
+      text: `
+        Get instant notifications for your rides and be 
+        in contact with fellow riders all the time
+      `,
+      title: "instant notifications"
+    },
+    {
+      text: `
+        Payment made easy by using your own Wallet - no more cash to carry
+      `,
+      title: "cashless payment"
+    }
+  ]
+
+-
+  var slides = [
+    "slider_img.png",
+    "slider_img.png",
+    "slider_img.png"
+  ]
+
+.tree#how
+  .tree__heading
+    h2.tree__heading__title how 
+      |
+      span.tree__heading__title--highlighted tere 
+      | works
+    p.tree__heading__description Download and install the tere app. 
+      | Enter your phone number and make your user account. when 
+      | approved you may start driving.
+
+  .tree__content
+    .tree__steps
+      each step, index in steps
+        .tree__steps__item
+          .tree__steps__number= index + 1
+          .tree__steps__title= step.title
+          .tree__steps__text= step.text
+
+    .tree__slider
+      .swiper.tree__slider__layout#slider
+        .swiper-wrapper
+          each slide of slides
+            .swiper-slide.tree__slider__slide
+              img.tree__slider__image(alt="Slide" src=require("images/" + slide))
+      .tree__slider__pagination#slider-pagination

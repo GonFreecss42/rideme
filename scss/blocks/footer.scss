@@ -10,10 +10,12 @@
     height: 260px;
     border-bottom: 1px solid gray;
   }
+
   &__contacts {
     display: flex;
     column-gap: 72px;
   }
+
   &__menu {
     height: 144px;
     width: 206px;
@@ -21,18 +23,21 @@
     &__title {
       color: #272042;
       font-size: 21px;
-      font-family: "GilroySemibold";
+      font-family: $fontSemiBold;
       margin-bottom: 21px;
     }
+
     &__list {
       font-size: 18px;
-      font-family: "Gilroy";
+      font-family: $font;
       color: #8b8ba5;
+
       &__item {
         margin-bottom: 15px;
       }
     }
   }
+
   &__appstore {
     display: flex;
     column-gap: 42px;
@@ -45,17 +50,22 @@
       text-decoration: none;
       text-transform: uppercase;
       font-size: 17px;
-      font-family: "GilroyExtrabold";
+      font-family: $fontExtraBold;
       align-items: center;
       padding-inline: 20px;
       border-radius: 3px;
       column-gap: 10px;
     }
+
+    &__icon {
+      height: 27px;
+    }
   }
+
   &__copyright {
     line-height: 100px;
     text-align: center;
     font-size: 16px;
-    color:#75BF7A;
+    color: $green;
   }
 }

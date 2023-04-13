@@ -2,38 +2,31 @@
   font-size: 20px;
   color: black;
   margin-bottom: 275px;
-  padding-top: 90px;  
+  padding-top: 60px;
 
   &__heading {
-    font-family:  $fontExtraBold;
-    color: #75bf7a;
-    font-size: 34px;
+    font-family: $fontExtraBold;
+    color: $green;
     text-align: center;
-    font-weight: 600px;
     margin-bottom: 52px;
 
     &__title {
-      color: #000000;
-      font-size: 34px;
+      color: black;
+      font-size: 46px;
       line-height: 32px;
       text-transform: uppercase;
       font-family: $fontExtraBold;
-      &--highlighted {
-        color: #75bf7a;
-      }
-    }
 
-    &__descriptions {
-      color: #9e9da2;
-      font-size: 22px;
-      font-family: $fontMedium;
+      &--highlighted {
+        color: $green;
+      }
     }
   }
 
   &__item {
-    background: #ffffff;
+    background: white;
     height: 304px;
-    width:calc(100% - 92px);
+    width: calc(100% - 92px);
     padding-inline: 46px;
     margin-bottom: 56px;
     border-radius: 10px;
@@ -41,6 +34,8 @@
     justify-content: center;
     flex-direction: column;
     position: relative;
+
+    $item: &;
 
     &__image {
       position: absolute;
@@ -53,39 +48,42 @@
       display: flex;
       align-items: center;
       max-width: 385px;
-      width:100%;
-      margin-bottom:20px;
-    }
-
-    &:nth-of-type(even) &__image {
-      right: initial;
-      left: 103px;
+      width: 100%;
+      margin-bottom: 20px;
     }
 
     &:nth-of-type(even) {
       align-items: flex-end;
       margin-left: auto;
-    }
-    &:nth-of-type(even) &__heading {
-      justify-content: flex-start;
+
+      #{$item}__heading {
+        justify-content: flex-start;
+      }
+
+      #{$item}__image {
+        right: initial;
+        left: 103px;
+      }
     }
   }
 
   &__number {
-    color: #75bf7a;
+    color: $green;
     font-size: 88px;
-    font-family: "GilroySemibold";
+    font-family: $fontSemiBold;
     margin-right: 40px;
   }
+
   &__title {
-    font-family: "GilroySemibold";
+    font-family: $fontSemiBold;
     font-size: 34px;
   }
-  &__descriptions {
-    font-family: "Gilroy";
-    color: #9e9da2;
+
+  &__description {
+    font-family: $fontMedium;
+    color: $grey;
     font-size: 22px;
     max-width: 385px;
-    line-height: 23px;
+    line-height: 24px;
   }
 }

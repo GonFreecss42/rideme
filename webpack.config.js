@@ -3,13 +3,28 @@ import PugPlugin from "pug-plugin";
 import "webpack-dev-server";
 
 export default {
+  devServer: {
+    open: true,
+    port: 1337,
+    hot: true,
+    liveReload: true,
+    static: {
+      directory: path.resolve("dist"),
+    },
+    watchFiles: {
+      paths: ["pug/**/*.pug", "js/**/*.js", "scss/**/*.scss"],
+      options: {
+        usePolling: true,
+      },
+    },
+  },
+  devtool: "inline-source-map",
   entry: {
     index: "./pug/index.pug",
   },
   output: {
     path: path.resolve("dist/"),
     publicPath: "/",
-    filename: "js/main.js"
   },
   plugins: [
     new PugPlugin({
@@ -17,6 +32,10 @@ export default {
       css: {
         filename: "css/main.css",
       },
+      js: {
+        filename: "js/[name].js",
+      },
+      verbose: true,
     }),
   ],
   mode: "development",
@@ -46,19 +65,13 @@ export default {
       },
     ],
   },
-  devServer: {
-    open: true,
-    port: 1337,
-    hot: true,
-    liveReload: true,
-    static: {
-      directory: path.resolve("dist"),
-    },
-    watchFiles: {
-      paths: ["pug/**/*.*", "scss/**/*.*"],
-      options: {
-        usePolling: true,
-      },
+  resolve: {
+    alias: {
+      favicon: path.resolve("./favicon.ico"),
+      scss: path.resolve("./scss/"),
+      images: path.resolve("./images/"),
+      fonts: path.resolve("./fonts/"),
+      js: path.resolve("./js/"),
     },
   },
 };

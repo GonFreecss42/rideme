@@ -1,9 +1,15 @@
+@import "variables/colors";
+@import "variables/devices";
+@import "variables/fonts";
+
 @import "global/fonts";
 @import "global/reset";
 @import "global/layout";
+@import "global/swiper";
 
 @import "blocks/header";
 @import "blocks/hero";
 @import "blocks/subscribe";
+@import "blocks/tree";
 @import "blocks/benefits";
 @import "blocks/footer";

@@ -1,14 +1,18 @@
+- 
+  var menu = [
+    { text: "Home", url: "#home" }, 
+    { text: "How tere works", url: "#how" }, 
+    { text: "Tere benefits", url: "#benefits" }
+  ]
+
 .header(id="home")
   .header__logo
     a.header__logo__link(href="/")
-      img(alt="this is header image." src=require("../../images/logo_img.jpg"))
+      img(alt="this is header image." src=require("images/logo_img.jpg"))
 
   .header__menu
     ul.header__menu__list
-      li.header__menu__item
-        a.header__menu__link(href="#home") Home
-      li.header__menu__item
-        a.header__menu__link(href="#how") How tere works
-      li.header__menu__item
-        a.header__menu__link(href="#benefits") Tere benefits
+      each item in menu
+        li.header__menu__item
+          a.header__menu__link(href=item.url)= item.text
     a.header__button(href="#footer") help center
