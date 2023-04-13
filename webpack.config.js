@@ -38,7 +38,7 @@ export default {
       verbose: true,
     }),
   ],
-  mode: "development",
+  mode: "none",
   module: {
     rules: [
       {
@@ -60,7 +60,7 @@ export default {
         test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
         type: "asset/resource",
         generator: {
-          filename: "[name][ext]",
+          filename: "fonts/[name][ext]",
         },
       },
     ],

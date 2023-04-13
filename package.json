@@ -16,7 +16,8 @@
   },
   "type": "module",
   "scripts": {
-    "develop": "webpack serve"
+    "develop": "webpack serve",
+    "build": "webpack"
   },
   "dependencies": {}
 }
